@@ -1,0 +1,20 @@
+meta {
+  name: update
+  type: http
+  seq: 6
+}
+
+patch {
+  url: http://localhost:3000/people/6791db6989fc60849edef70a
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Rocky",
+    "favoriteFood": "Sushi Rolls",
+    "favoriteMovie": "Back to The Future",
+    "status": "Active"
+  }
+}

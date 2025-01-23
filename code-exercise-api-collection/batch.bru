@@ -1,0 +1,40 @@
+meta {
+  name: batch
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:3000/people/batch/create
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "name": "Rocky",
+      "favoriteFood": "Sushi",
+      "favoriteMovie": "Back to The Future",
+      "status": "Inactive"
+    },
+    {
+      "name": "Miroslav",
+      "favoriteFood": "Sushi",
+      "favoriteMovie": "American Psycho",
+      "status": "Active"
+    },
+    {
+      "name": "Donny",
+      "favoriteFood": "Singapore chow mei fun",
+      "favoriteMovie": "The Princess Bride",
+      "status": "Inactive"
+    },
+    {
+      "name": "Matt",
+      "favoriteFood": "Brisket Tacos",
+      "favoriteMovie": "The Princess Bride",
+      "status": "Active"
+    }
+  ]
+}
