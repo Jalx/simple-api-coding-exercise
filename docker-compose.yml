@@ -1,0 +1,26 @@
+services:
+  app:
+    image: node:jod-alpine
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./app:/home/node/app
+    expose:
+      - "3000"
+    ports:
+      - "3000:3000"
+    command: "npm start"
+    # depends_on:
+    #   - mongodb
+  # mongodb:
+  #   image: mongodb/mongodb-community-server:6.0-ubi8
+  #   environment:
+  #     - MONGO_INITDB_ROOT_USERNAME=secret
+  #     - MONGO_INITDB_ROOT_PASSWORD=secret
+  #   ports:
+  #     - "27017:27017"
+  #   volumes:
+  #     - type: bind
+  #       source: ./data
+  #       target: /data/db
