@@ -63,7 +63,6 @@ export async function createRecord(req: Request, res: Response): Promise<void> {
                 message: "Known client error ocurred. Check your payload."
             });
         }
-        throw error;
     }
 }
 
@@ -93,7 +92,6 @@ export async function createRecordsBatch(req: Request, res: Response): Promise<v
                 message: "Known client error ocurred. Check your payload."
             });
         }
-        throw error;
     }
 }
 
@@ -125,7 +123,6 @@ export async function updateById(req: Request, res: Response): Promise<void> {
                 message: "Known client error ocurred. Check your payload."
             });
         }
-        throw error;
     }
 }
 
@@ -145,7 +142,6 @@ export async function deleteById(req: Request, res: Response): Promise<void> {
                 message: "Known client error ocurred. Check your payload."
             });
         }
-        throw error;
     }
 }
 
@@ -179,6 +175,5 @@ export async function search(req: Request, res: Response): Promise<void> {
                 message: "Known client error ocurred. Check your payload."
             });
         }
-        throw error;
     }
 }
