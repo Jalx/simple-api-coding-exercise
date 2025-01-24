@@ -26,5 +26,12 @@ To run tests:
 
 You can test the API using the tool [bruno](https://www.usebruno.com). It's a Git integrated API client.
 
+## Endpoints
 
-
+- POST /people
+- POST /people/batch/create
+- GET /people
+- GET /people/:id
+- PATCH /people/:id
+- DELETE /people/:id
+- POST /people/search
